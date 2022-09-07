@@ -9,6 +9,8 @@ import datetime
 import logging
 import functools, traceback
 
+import datetime
+d = datetime.datetime.now().astimezone().isoformat(timespec='minutes')
 
 async def f():
     send_event_cb: asyncio.Event = asyncio.Event()
